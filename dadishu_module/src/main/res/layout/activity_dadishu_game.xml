@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/barrier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关卡:"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="得分:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barrier" />
+
+    <TextView
+        android:id="@+id/life"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="生命:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/score" />
+
+    <TextView
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="进度:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/life" />
+
+    <ImageView
+        android:id="@+id/img0"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/meng"
+        app:layout_constraintEnd_toStartOf="@+id/img1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progress" />
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/meng"
+        app:layout_constraintEnd_toStartOf="@+id/img2"
+        app:layout_constraintStart_toEndOf="@+id/img0"
+        app:layout_constraintTop_toBottomOf="@+id/progress" />
+
+    <ImageView
+        android:id="@+id/img2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/meng"
+        app:layout_constraintEnd_toStartOf="@+id/img3"
+        app:layout_constraintStart_toEndOf="@+id/img1"
+        app:layout_constraintTop_toBottomOf="@+id/progress" />
+
+    <ImageView
+        android:id="@+id/img3"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/meng"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img2"
+        app:layout_constraintTop_toBottomOf="@+id/progress" />
+
+    <ImageView
+        android:id="@+id/img4"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/meng"
+        app:layout_constraintEnd_toStartOf="@+id/img5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img0" />
+
+    <ImageView
+        android:id="@+id/img5"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/meng"
+        app:layout_constraintEnd_toStartOf="@+id/img6"
+        app:layout_constraintStart_toEndOf="@+id/img4"
+        app:layout_constraintTop_toBottomOf="@+id/img0" />
+
+    <ImageView
+        android:id="@+id/img6"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/meng"
+        app:layout_constraintEnd_toStartOf="@+id/img7"
+        app:layout_constraintStart_toEndOf="@+id/img5"
+        app:layout_constraintTop_toBottomOf="@+id/img0" />
+
+    <ImageView
+        android:id="@+id/img7"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/meng"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img6"
+        app:layout_constraintTop_toBottomOf="@+id/img0" />
+
+    <ImageView
+        android:id="@+id/img8"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/meng"
+        app:layout_constraintEnd_toStartOf="@+id/img9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img4" />
+
+    <ImageView
+        android:id="@+id/img9"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/meng"
+        app:layout_constraintEnd_toStartOf="@+id/img10"
+        app:layout_constraintStart_toEndOf="@+id/img8"
+        app:layout_constraintTop_toBottomOf="@+id/img4" />
+
+    <ImageView
+        android:id="@+id/img10"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/meng"
+        app:layout_constraintEnd_toStartOf="@+id/img11"
+        app:layout_constraintStart_toEndOf="@+id/img9"
+        app:layout_constraintTop_toBottomOf="@+id/img4" />
+
+    <ImageView
+        android:id="@+id/img11"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/meng"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img10"
+        app:layout_constraintTop_toBottomOf="@+id/img4" />
+
+    <ImageView
+        android:id="@+id/img12"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/meng"
+        app:layout_constraintEnd_toStartOf="@+id/img13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img8" />
+
+    <ImageView
+        android:id="@+id/img13"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/meng"
+        app:layout_constraintEnd_toStartOf="@+id/img14"
+        app:layout_constraintStart_toEndOf="@+id/img12"
+        app:layout_constraintTop_toBottomOf="@+id/img8" />
+
+    <ImageView
+        android:id="@+id/img14"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/meng"
+        app:layout_constraintEnd_toStartOf="@+id/img15"
+        app:layout_constraintStart_toEndOf="@+id/img13"
+        app:layout_constraintTop_toBottomOf="@+id/img8" />
+
+    <ImageView
+        android:id="@+id/img15"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/meng"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img14"
+        app:layout_constraintTop_toBottomOf="@+id/img8" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="开始"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn2"
+        app:layout_constraintTop_toBottomOf="@+id/img12"/>
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="退出"
+        app:layout_constraintStart_toEndOf="@+id/btn1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img12"/>
+</android.support.constraint.ConstraintLayout>
